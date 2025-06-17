@@ -8,51 +8,57 @@
 </head>
 <body>
     <header>
-        <h1>Produtos de Reserva - Venda de Produtos Agrícolas</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Produtos de Reserva</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="produtos">
-            <h2>Produtos Disponíveis</h2>
-            <div class="produto" id="produto1">
-                <img src="https://via.placeholder.com/150" alt="Produto 1">
-                <p class="nome">Feijão Orgânico</p>
-                <p class="preco">R$ 20,00</p>
-                <button onclick="adicionarAoCarrinho('Feijão Orgânico', 20)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto" id="produto2">
-                <img src="https://via.placeholder.com/150" alt="Produto 2">
-                <p class="nome">Arroz Integral</p>
-                <p class="preco">R$ 25,00</p>
-                <button onclick="adicionarAoCarrinho('Arroz Integral', 25)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto" id="produto3">
-                <img src="https://via.placeholder.com/150" alt="Produto 3">
-                <p class="nome">Milho Verde</p>
-                <p class="preco">R$ 15,00</p>
-                <button onclick="adicionarAoCarrinho('Milho Verde', 15)">Adicionar ao Carrinho</button>
-            </div>
-        </section>
+        <div class="container">
+            <section id="produtos">
+                <h2>Produtos Disponíveis</h2>
+                <div class="produto" id="produto1">
+                    <img src="https://via.placeholder.com/300x200" alt="Produto 1">
+                    <p class="nome">Feijão Orgânico</p>
+                    <p class="preco">R$ 20,00</p>
+                    <button onclick="adicionarAoCarrinho('Feijão Orgânico', 20)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" id="produto2">
+                    <img src="https://via.placeholder.com/300x200" alt="Produto 2">
+                    <p class="nome">Arroz Integral</p>
+                    <p class="preco">R$ 25,00</p>
+                    <button onclick="adicionarAoCarrinho('Arroz Integral', 25)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" id="produto3">
+                    <img src="https://via.placeholder.com/300x200" alt="Produto 3">
+                    <p class="nome">Milho Verde</p>
+                    <p class="preco">R$ 15,00</p>
+                    <button onclick="adicionarAoCarrinho('Milho Verde', 15)">Adicionar ao Carrinho</button>
+                </div>
+            </section>
 
-        <section id="carrinho">
-            <h2>Carrinho de Compras</h2>
-            <ul id="itensCarrinho">
-                <!-- Itens do carrinho serão listados aqui -->
-            </ul>
-            <p id="totalCarrinho">Total: R$ 0,00</p>
-            <button onclick="finalizarCompra()">Finalizar Compra</button>
-        </section>
+            <section id="carrinho">
+                <h2>Carrinho de Compras</h2>
+                <ul id="itensCarrinho">
+                    <!-- Itens do carrinho serão listados aqui -->
+                </ul>
+                <p id="totalCarrinho">Total: R$ 0,00</p>
+                <button onclick="finalizarCompra()">Finalizar Compra</button>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Produtos de Reserva</p>
+        <div class="container">
+            <p>&copy; 2025 Produtos de Reserva</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
