@@ -1,0 +1,144 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para a lista de produtos */
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produto .nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.produto .preco {
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+.produto button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.produto button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do carrinho */
+#carrinho {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+#carrinho ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#carrinho li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+#carrinho #totalCarrinho {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#carrinho button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#carrinho button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+}
